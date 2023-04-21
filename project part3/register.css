@@ -48,8 +48,8 @@ input {
 	margin-bottom: 20px;
 }
 
-button {
-	background-color: #4CAF50;
+button[type=submit]{
+	background-color: #43ff32;
 	color: white;
 	padding: 10px;
 	border: none;
@@ -57,7 +57,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+button:hover [type=submit]{
 	background-color: #3e8e41;
 }
 

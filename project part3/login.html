@@ -4,23 +4,25 @@
     <title>login page</title>
     <meta name="viewpoert" content="width=device-width, initaial-scale=1">
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel = "icon" href="amongus.png"  type = "image/x-icon">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+  <div class="container">
     <h1>Login</h1>
-  <form>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
 
-    <a href="mainpage.html"><button type="submit">Login</button></a>
-
-    <div class="separator">or</div>
-
-    <a href="register.html">Register</a>
-  </form>
+      <button type="submit"><a href="mainpage.html">Login</a></button>
+    </form>
+    <div class="register-link">
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </div>
 </body>
 </html>

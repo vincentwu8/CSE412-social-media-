@@ -17,7 +17,9 @@ $is_invalid = false;
           
           session_start();
 
-          $_SESSION["username"] = $user["id"];
+          session_regenerate_id();
+
+          $_SESSION["username"] = $user["user_id"];
 
           header("Location: index.php");
           exot;

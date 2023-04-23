@@ -47,5 +47,6 @@ $stmt->bind_param("ssssssss",
 
 $stmt->execute();
 
-echo "signup good";
+header("location: signdone.html");
+exit;
 #print_r($_POST);

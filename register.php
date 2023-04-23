@@ -26,7 +26,7 @@ if($_POST["password"] !== $_POST["confirm-password"]){
 
 $mysqli = require __DIR__ . "/database.php";
 
-$sql = "INSERT INTO user(user_id, first_name, last_name, email_address, DOB, city, gender, password)
+$sql = "INSERT INTO users(user_id, first_name, last_name, email_address, DOB, city, gender, password)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $mysqli->stmt_init();

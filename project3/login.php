@@ -19,10 +19,10 @@ $is_invalid = false;
 
           session_regenerate_id();
 
-          $_SESSION["username"] = $user["user_id"];
+          $_SESSION["user_id"] = $user["id"];
 
           header("Location: index.php");
-          exot;
+          exit;
         }
       }
       $is_invalid = true;

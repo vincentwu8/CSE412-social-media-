@@ -1,9 +1,5 @@
 <?php
 
-if (empty($_POST["username"])){
-    die("username id required");
-}
-
 if(empty($_POST["first-name"])){
     die("firstname required");
 }
@@ -26,8 +22,8 @@ if($_POST["password"] !== $_POST["confirm-password"]){
 
 $mysqli = require __DIR__ . "/database.php";
 
-$sql = "INSERT INTO user(user_id, first_name, last_name, email_address, DOB, city, gender, password)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO user(first_name, last_name, email_address, DOB, city, gender, password)
+        VALUES (?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $mysqli->stmt_init();
 
@@ -35,8 +31,7 @@ if( ! $stmt->prepare($sql)){
     die("SQL error: " . $mysqli->error);
 }
 
-$stmt->bind_param("ssssssss",
-                $_POST["username"],
+$stmt->bind_param("sssssss",
                 $_POST["first-name"],
                 $_POST["last-name"],
                 $_POST["email"],

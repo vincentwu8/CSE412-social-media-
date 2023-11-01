@@ -1,0 +1,10 @@
+ideas:
+Blender(character from league, pokemon,tiktok) VR Headset sword art online
+three.js
+HTML
+CSS
+JS
+GSAPtimeline
+vercel
+Asscroll
+Vite.js
